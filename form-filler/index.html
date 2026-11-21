@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Form Filler has moved</title>
+<link rel="stylesheet" href="goodbye.css">
+<script src="goodbye.js" defer></script>
+</head>
+<body>
+<main>
+  <h1>Form Filler has moved</h1>
+  <p>It is now at <a href="https://formfiller-app.github.io/form-filler/">formfiller-app.github.io/form-filler</a>, an
+    address of its own, where your details are kept locked with a passphrase.</p>
+  <p><a class="button" id="open-new" href="https://formfiller-app.github.io/form-filler/">Open Form Filler at its new address</a></p>
+  <p>Nothing you kept here moves with it: at the new address you start again. If you put Form Filler on your home
+    screen, add it again from the new address, then delete the old icon.</p>
+  <section id="left" hidden>
+    <h2>What the old Form Filler left in this browser</h2>
+    <p>This browser still holds what the old version kept at this address:</p>
+    <ul id="what"></ul>
+    <p class="tools"><button type="button" id="show">Show my details</button>
+      <button type="button" id="remove" class="primary">Remove it all</button></p>
+    <div id="details" hidden>
+      <p>To type them in again at the new address. A saved signature cannot move with them: draw it again there.</p>
+      <dl id="fields"></dl>
+    </div>
+  </section>
+  <p id="none" hidden>Nothing from the old Form Filler is left in this browser.</p>
+  <p id="removed" hidden role="status">Removed. Nothing from the old Form Filler is left in this browser.</p>
+  <p id="failed" hidden role="alert"></p>
+  <p class="small">On an iPhone or iPad, a copy on the Home Screen keeps its own storage, apart from Safari's. Open
+    that copy once more: it shows this page. Press <em>Remove it all</em> there too, then delete the icon.</p>
+</main>
+</body>
+</html>
